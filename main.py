@@ -38,6 +38,8 @@ def check_whales():
             print("Fetch error:", e)
 
 print("🤖 Whale bot started.")
+send_telegram_message("✅ Бот запущен и подключён к Telegram.")
+
 while True:
     check_whales()
     time.sleep(600)
